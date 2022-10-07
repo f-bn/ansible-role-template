@@ -5,20 +5,20 @@ A brief description of the role goes here.
 **Table of Contents**
 
   - [Roles variables](#role-variables)
-  - [Roles tags](#role-variables)
+  - [Examples](#examples)
   - [Install and use this role](#install-and-use-this-role)
 
 **Supported Platforms**
 
-  - Platform 1
+  - Platform
 
 **Requirements**
 
-  - Requirement 1
+  - Requirement
 
 **References**
 
-  - Reference 1 : [Link]()
+  - Reference : [Link]()
 
 ### Role variables
 
@@ -30,7 +30,7 @@ The role variables documentation are available here :
 
 You can find some configurations examples :
 
-  - [Example 1](docs/examples.md)
+  - [Example](docs/examples.md)
 
 ### Install and use this role
 
