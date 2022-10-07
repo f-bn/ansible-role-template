@@ -1,5 +1,3 @@
-*Product description*
-
 ### General informations
 
 A brief description of the role goes here.
