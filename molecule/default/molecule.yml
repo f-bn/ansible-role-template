@@ -1,0 +1,57 @@
+---
+dependency:
+  name: galaxy
+  options:
+    requirements-file: molecule/requirements.yml
+driver:
+  name: docker
+platforms:
+  - name: fedora36
+    image: fedora:36-ansible
+    dockerfile: ../Dockerfile.fedora36
+    command: /sbin/init
+    tmpfs:
+      - /run
+      - /tmp
+      - /var/lib/journal
+    volumes:
+      - '/sys/fs/cgroup:/sys/fs/cgroup:ro'
+    env:
+      container: "docker"
+  - name: el9
+    image: almalinux:9-ansible
+    dockerfile: ../Dockerfile.el9
+    command: /sbin/init
+    tmpfs:
+      - /run
+      - /tmp
+      - /var/lib/journal
+    volumes:
+      - '/sys/fs/cgroup:/sys/fs/cgroup:ro'
+    env:
+      container: "docker"
+  - name: el8
+    image: almalinux:8-ansible
+    dockerfile: ../Dockerfile.el8
+    command: /sbin/init
+    tmpfs:
+      - /run
+      - /tmp
+      - /var/lib/journal
+    volumes:
+      - '/sys/fs/cgroup:/sys/fs/cgroup:ro'
+    env:
+      container: "docker"
+provisioner:
+  name: ansible
+  config_options:
+    defaults:
+      callbacks_enabled: profile_tasks, timer, yaml
+  ssh_connection:
+    pipelining: true
+verifier:
+  name: ansible
+lint: |
+    set -e
+    yamllint .
+    ansible-lint .
