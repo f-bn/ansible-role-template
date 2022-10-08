@@ -10,15 +10,15 @@ A brief description of the role goes here.
 
 **Supported Platforms**
 
-  - Platform
+  - \<platform\>
 
 **Requirements**
 
-  - Requirement
+  - \<requirement\>
 
 **References**
 
-  - Reference : [Link]()
+  - \<reference : [Link]()\>
 
 ### Role variables
 
@@ -37,7 +37,7 @@ You can find some configurations examples :
 * Install the role using the command-line :
 
   ```shell
-  $ ansible-galaxy role install git+https://github.com/ruskofd/ansible-role.git
+  $ ansible-galaxy role install git+https://github.com/ruskofd/ansible-role.git ansible_role
   ```
 
 * You can also install the role in your projects using a `requirements.yml` file and `ansible-galaxy` command-line :
@@ -46,7 +46,7 @@ You can find some configurations examples :
   $ cat requirements.yml
   ---
   roles:
-    - name: ansible-role
+    - name: ansible_role
       src: https://github.com/ruskofd/ansible-role.git
       scm: git
       version: '1.0.0'
@@ -60,5 +60,5 @@ You can find some configurations examples :
   - name: Deploy
     hosts: <hosts>
     roles:
-      - role: ansible-role
+      - role: ansible_role
   ```
