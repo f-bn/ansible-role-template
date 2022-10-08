@@ -37,7 +37,7 @@ You can find some configurations examples :
 * Install the role using the command-line :
 
   ```shell
-  $ ansible-galaxy role install git+https://github.com/ruskofd/ansible-role.git ansible_role
+  $ ansible-galaxy role install git+https://github.com/ruskofd/ansible-role-template.git ansible_role_template
   ```
 
 * You can also install the role in your projects using a `requirements.yml` file and `ansible-galaxy` command-line :
@@ -46,8 +46,8 @@ You can find some configurations examples :
   $ cat requirements.yml
   ---
   roles:
-    - name: ansible_role
-      src: https://github.com/ruskofd/ansible-role.git
+    - name: ansible_role_template
+      src: https://github.com/ruskofd/ansible-role-template.git
       scm: git
       version: '1.0.0'
 
@@ -60,5 +60,5 @@ You can find some configurations examples :
   - name: Deploy
     hosts: <hosts>
     roles:
-      - role: ansible_role
+      - role: ansible_role_template
   ```
