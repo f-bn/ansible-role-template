@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:36
+FROM registry.fedoraproject.org/fedora:37
 
 RUN dnf install -y systemd procps-ng iproute util-linux python3 sudo hostname \
     && dnf clean all \
