@@ -20,10 +20,10 @@ Create an empty repository on your favorite Git platform, i.e with GitHub using 
 $ gh repo create ansible-role-myrole [options]
 ```
 
-Bootstrap a new project using Cookiecutter. You will be prompted for various variables to configure role name and metadata:
+Bootstrap a new project using Cookiecutter with the remote GitHub repository. You will be prompted for various variables to configure role name and other metadata:
 
 ```console
-$ cookiecutter https://https://github.com/f-bn/ansible-role-template.git
+$ cookiecutter gh:f-bn/ansible-role-template
 ```
 
 Finally, intialize a Git repository in the newly created folder by Cookiecutter and push the initial changes:
