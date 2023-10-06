@@ -1,0 +1,12 @@
+{
+  "role_name": "",
+  "description": "",
+  "author": "f-bn",
+  "license": "MIT",
+  "__prompts__": {
+    "role_name": "Role name",
+    "description": "Short role description",
+    "author": "Author(s) name(s) (comma-separated)",
+    "license": "Source code license (SPDX format)"
+  }
+}
