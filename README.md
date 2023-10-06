@@ -1,6 +1,6 @@
 ### General informations
 
-Ansible role skeleton template for use with Cookiecutter.
+Ansible role skeleton template to simply generate role project repository with Cookiecutter.
 
 **Requirements**
   - Ansible 8.x
