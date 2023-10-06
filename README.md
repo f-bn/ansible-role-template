@@ -3,8 +3,8 @@
 Ansible role skeleton template for use with Cookiecutter.
 
 **Requirements**
-
-- Cookiecutter
+  - Ansible 8.x
+  - Cookiecutter
 
 ### How-to bootstrap a new role project with Cookiecutter ?
 
