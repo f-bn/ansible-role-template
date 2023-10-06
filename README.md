@@ -23,7 +23,7 @@ $ gh repo create ansible-role-myrole [options]
 Bootstrap a new project using Cookiecutter. You will be prompted for various variables to configure role name and metadata:
 
 ```console
-$ cookiecutter https://https://github.com/f-bn/ansible-role-template-v2.git
+$ cookiecutter https://https://github.com/f-bn/ansible-role-template.git
 ```
 
 Finally, intialize a Git repository in the newly created folder by Cookiecutter and push the initial changes:
