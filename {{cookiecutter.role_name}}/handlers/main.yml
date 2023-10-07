@@ -1,0 +1,9 @@
+---
+# Handlers for '{{ cookiecutter.role_name }}' role
+
+#- name: Restart {{ cookiecutter.role_name }} service
+#  ansible.builtin.systemd:
+#    name: {{ cookiecutter.role_name }}.service
+#    state: restarted
+#    daemon_reload: true
+#  when: {{ cookiecutter.role_name }}_restart_on_changes

@@ -1,0 +1,13 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Retrive system services status
+      ansible.builtin.service_facts:
+
+    - name: Check if PostgreSQL service is enabled and running
+      ansible.builtin.assert:
+        that:
+          - services["{{ cookiecutter.role_name }}.service"]["state"] == "running"
+          - services["{{ cookiecutter.role_name }}.service"]["status"] == "enabled"

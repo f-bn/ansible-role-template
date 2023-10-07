@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  role_name: {{ cookiecutter.role_name }}
+  description: {{ cookiecutter.role_description }}
+  author: {{ cookiecutter.role_author }}
+  license: {{ cookiecutter.role_license }}
+  min_ansible_version: '{{ cookiecutter.role_min_ansible_version }}'
+  issue_tracker_url: https://github.com/{{ cookiecutter.role_author }}/ansible-role-{{ cookiecutter.role_name }}/issues
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 'jammy'
+  galaxy_tags: []
+dependencies: []
