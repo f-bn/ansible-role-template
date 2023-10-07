@@ -28,7 +28,7 @@
 
 ### Examples
 
-```console
+```yaml
 {{ cookiecutter.role_name }}_version: '1.0.0'
 ```
 
