@@ -18,7 +18,7 @@ jobs:
       - name: Install Python ${{ matrix.python_version }}
         uses: actions/setup-python@v4
         with:
-          python_version: ${{ matrix.python_version }}
+          python-version: ${{ matrix.python_version }}
       - name: Install required Python packages
         run: |
           pip3 install -r requirements.txt
