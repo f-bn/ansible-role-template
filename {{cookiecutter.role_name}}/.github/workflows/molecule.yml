@@ -10,17 +10,21 @@ jobs:
     steps:
       - name: Check-out repository
         uses: actions/checkout@v4
+        with:
+          path: {{ cookiecutter.role_name }}
       - name: Install system dependencies
         run: |
           sudo apt update
           sudo apt install podman buildah
-      - name: Install Python ${{ matrix.python_version }}
+      - name: Install Python {% raw %}${{ matrix.python_version }}{% endraw %}
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python_version }}
+          python-version: {% raw %}${{ matrix.python_version }}{% endraw %}
       - name: Install required Python packages
+        working-directory: {{ cookiecutter.role_name }}
         run: |
           pip3 install -r requirements.txt
       - name: Run Molecule tests
+        working-directory: {{ cookiecutter.role_name }}
         run: |
           molecule test --all
