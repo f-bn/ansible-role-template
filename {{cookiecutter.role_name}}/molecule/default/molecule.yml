@@ -22,7 +22,3 @@ provisioner:
       #host_vars: inventory/host_vars/
 verifier:
   name: ansible
-lint: |
-    set -e
-    yamllint .
-    ansible-lint .
