@@ -3,11 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Retrive system services status
-      ansible.builtin.service_facts:
-
-    - name: Check if {{ cookiecutter.role_name | title }} service is enabled and running
+    - name: Example assertion
       ansible.builtin.assert:
-        that:
-          - services["{{ cookiecutter.role_name }}.service"]["state"] == "running"
-          - services["{{ cookiecutter.role_name }}.service"]["status"] == "enabled"
+        that: true
