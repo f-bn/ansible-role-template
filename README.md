@@ -3,10 +3,12 @@
 Ansible role skeleton template to generate role project repository with Cookiecutter.
 
 **Requirements**
+
   - Ansible >= 8.x
   - Cookiecutter
 
 **References**
+
   - Cookiecutter: https://github.com/cookiecutter/cookiecutter
 
 ### How to bootstrap a new role project using Cookiecutter ?
