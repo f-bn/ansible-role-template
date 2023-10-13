@@ -6,7 +6,7 @@
     - name: Retrive system services status
       ansible.builtin.service_facts:
 
-    - name: Check if PostgreSQL service is enabled and running
+    - name: Check if {{ cookiecutter.role_name | title }} service is enabled and running
       ansible.builtin.assert:
         that:
           - services["{{ cookiecutter.role_name }}.service"]["state"] == "running"
