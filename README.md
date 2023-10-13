@@ -32,14 +32,15 @@ Bootstrap a new project using Cookiecutter with the remote GitHub repository. Yo
 
 ```shell
 $ cookiecutter gh:f-bn/ansible-role-template
-  [1/5] Role name (): myrole
-  [2/5] Short role description (): Ansible role to setup and configure...
-  [3/5] Author name (f-bn): <enter>
-  [4/5] Source code license (SPDX format)
+  [1/6] Role name (): myrole
+  [2/6] Short role description (): Ansible role to setup and configure...
+  [3/6] Author name (f-bn): <enter>
+  [4/6] Source code license (SPDX format)
     1 - MIT
     2 - BSD-3-Clause
     Choose from [1/2] (1): <enter>
-  [5/5] Min. Ansible compatible version (8.0.0): <enter>
+  [5/6] Min. Ansible compatible version (8.0.0): <enter>
+  [6/6] Issue tracker URL (https://github.com/f-bn/ansible-role-myrole/issues):
 ```
 
 Finally, intialize a Git repository in the newly created folder by Cookiecutter and push the initial changes your repository:
