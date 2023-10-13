@@ -4,11 +4,13 @@
   "role_author": "f-bn",
   "role_license": ["MIT", "BSD-3-Clause"],
   "role_min_ansible_version": "8.0.0",
+  "role_issue_tracker_url": "https://github.com/{{ cookiecutter.role_author }}/ansible-role-{{ cookiecutter.role_name }}/issues",
   "__prompts__": {
     "role_name": "Role name",
     "role_description": "Short role description",
     "role_author": "Author name",
     "role_license": "Source code license (SPDX format)",
-    "role_min_ansible_version": "Min. Ansible compatible version"
+    "role_min_ansible_version": "Min. Ansible compatible version",
+    "role_issue_tracker_url": "Issue tracker URL"
   }
 }

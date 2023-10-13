@@ -5,7 +5,7 @@ galaxy_info:
   author: {{ cookiecutter.role_author }}
   license: {{ cookiecutter.role_license }}
   min_ansible_version: '{{ cookiecutter.role_min_ansible_version }}'
-  issue_tracker_url: https://github.com/{{ cookiecutter.role_author }}/ansible-role-{{ cookiecutter.role_name }}/issues
+  issue_tracker_url: {{ cookiecutter.role_issue_tracker_url }}
   platforms:
     - name: Ubuntu
       versions:
