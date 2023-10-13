@@ -2,7 +2,7 @@
   "role_name": "",
   "role_description": "",
   "role_author": "f-bn",
-  "role_license": "MIT",
+  "role_license": ["MIT", "BSD-3-Clause"],
   "role_min_ansible_version": "8.0.0",
   "__prompts__": {
     "role_name": "Role name",
