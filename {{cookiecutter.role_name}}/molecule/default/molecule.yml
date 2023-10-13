@@ -7,8 +7,8 @@ driver:
   name: podman
 platforms:
   - name: default
-    image: ubuntu:22-04-ansible
-    dockerfile: ../Dockerfile.ubuntu2204
+    image: docker.io/fbn587/molecule-ubuntu:jammy
+    pre_build_image: true
     command: /sbin/init
     systemd: always
 provisioner:
