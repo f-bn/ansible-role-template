@@ -1,5 +1,5 @@
 ---
-name: Molecule tests
+name: Ansible tests
 on: ['push','pull_request']
 jobs:
   lint:
