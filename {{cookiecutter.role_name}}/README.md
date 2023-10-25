@@ -1,3 +1,5 @@
+## Ansible role - {{ cookiecutter.role_name | title }}
+
 ### General informations
 
 {{ cookiecutter.role_description }}.
