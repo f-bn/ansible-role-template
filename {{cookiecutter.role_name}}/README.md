@@ -11,6 +11,8 @@
 
 **Supported Platforms**
 
+This role only supports Ubuntu Server LTS platforms:
+
   - Ubuntu 22.04 *Jammy Jellyfish*
 
 **Requirements**
