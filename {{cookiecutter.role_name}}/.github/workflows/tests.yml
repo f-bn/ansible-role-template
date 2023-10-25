@@ -38,10 +38,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: {{ cookiecutter.role_name }}
-      - name: Install system dependencies
-        run: |
-          sudo apt update
-          sudo apt install podman buildah
       - name: Install Python {% raw %}${{ matrix.python_version }}{% endraw %}
         uses: actions/setup-python@v4
         with:
