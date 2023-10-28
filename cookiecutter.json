@@ -1,5 +1,6 @@
 {
   "role_name": "",
+  "role_namespace": "fbn587",
   "role_description": "",
   "role_author": "f-bn",
   "role_license": ["MIT", "BSD-3-Clause"],
@@ -7,6 +8,7 @@
   "role_issue_tracker_url": "https://github.com/{{ cookiecutter.role_author }}/ansible-role-{{ cookiecutter.role_name }}/issues",
   "__prompts__": {
     "role_name": "Role name",
+    "role_namespace": "Role namespace", 
     "role_description": "Short role description",
     "role_author": "Author name",
     "role_license": "Source code license (SPDX format)",
