@@ -39,7 +39,7 @@ $ cookiecutter gh:f-bn/ansible-role-template
     1 - MIT
     2 - BSD-3-Clause
     Choose from [1/2] (1): <enter>
-  [5/6] Min. Ansible compatible version (8.0.0): <enter>
+  [5/6] Min. Ansible compatible version (9.0.0): <enter>
   [6/6] Issue tracker URL (https://github.com/f-bn/ansible-role-myrole/issues):
 ```
 
