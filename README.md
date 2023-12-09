@@ -4,7 +4,7 @@ Ansible role skeleton template to generate role project repository with Cookiecu
 
 **Requirements**
 
-  - Ansible >= 8.x
+  - Ansible >= 9.x
   - Cookiecutter
 
 **References**
